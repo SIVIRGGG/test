@@ -671,7 +671,7 @@ let arr = [vasya, petya, masha];
 console.log(reducE(arr)); // (25 + 30 + 29) / 3 = 28*/
 
 
-
+/*
 //Напишите функцию unique(arr), которая возвращает массив, содержащий только уникальные элементы arr.
 let strings = ["кришна", "кришна", "харе", "харе",
     "харе", "харе", "кришна", "кришна", ":-O"
@@ -689,3 +689,4 @@ function unique(arr) {
     return result;
 }
 console.log(unique(strings));
+*/
