@@ -690,3 +690,81 @@ function unique(arr) {
 }
 console.log(unique(strings));
 */
+
+
+/*
+function q() {
+    let nameUser = prompt('Введите логин', ' ');
+
+    if (nameUser == 'Админ') {
+        let pass = prompt('Пароль', '');
+
+        if (pass == 'Я главный') {
+            alert('Здравствуйте!');
+        } else if (pass == '' || pass == null) {
+            alert('Отмена');
+        } else {
+            alert('Неверный пароль');
+        }
+    } else if (nameUser == '' || nameUser == null) {
+        alert('Отмена');
+    } else {
+        alert('Я вас не знаю');
+    }
+}
+q();
+*/
+/*
+function pow(x, n) {
+    let result = x;
+    for (let i = 1; i < n; i++) {
+        result *= x;
+    }
+    return result;
+}
+
+let x = prompt('x?', '');
+let n = prompt('n?', '');
+
+if (n < 1) {
+    alert(`Степень ${n} не поддерживается, введите другое число!`);
+} else {
+    alert(pow(x, n));
+}
+pow();
+*/
+
+
+/*
+function as(question, yes, no) {
+    if (confirm(question)) yes()
+    else no();
+}
+
+as(
+    "Вы согласны?",
+    function() { alert("Вы согласились."); },
+    function() { alert("Вы отменили выполнение."); }
+);
+*/
+
+
+/*
+function Calculator() {
+    this.read = function() {
+        this.a = +prompt('a?', 0);
+        this.b = +prompt('b?', 0);
+    };
+    this.sum = function() {
+        return this.a + this.b;
+    };
+    this.mul = function() {
+        return this.a * this.b;
+    };
+}
+
+let calc = new Calculator();
+calc.read();
+alert('Sum =' + calc.sum());
+alert('Mul =' + calc.mul());
+*/
