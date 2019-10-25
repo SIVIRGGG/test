@@ -768,3 +768,72 @@ calc.read();
 alert('Sum =' + calc.sum());
 alert('Mul =' + calc.mul());
 */
+
+/*
+//Рандом
+function randomInteger(min, max) {
+    // получить случайное число от (min-0.5) до (max+0.5)
+    let rand = min - 0.5 + Math.random() * (max - min + 1);
+    return Math.round(rand);
+  }
+  
+  alert( randomInteger(1, 3) );
+  */
+
+
+
+
+/*
+//Чтобы найти все вхождения подстроки, нужно запустить indexOf в цикле. Каждый раз, получив очередную позицию, начинаем новый поиск со следующей:
+let str = 'Ослик Иа-Иа посмотрел на виадук';
+
+let target = 'Иа'; // цель поиска
+
+let pos = 0;
+while (true) {
+  let foundPos = str.indexOf(target, pos);
+  if (foundPos == -1) break;
+
+  alert( `Найдено тут: ${foundPos}` );
+  pos = foundPos + 1; // продолжаем со следующей позиции
+}
+ // Тот же алгоритм можно записать и короче:
+ let str = "Ослик Иа-Иа посмотрел на виадук";
+let target = "Иа";
+
+let pos = -1;
+while ((pos = str.indexOf(target, pos + 1)) != -1) {
+  alert( pos );
+}
+*/
+
+
+/*
+//Добавление/удаление элементов
+let arr = ["Я", "изучаю", "JavaScript", "прямо", "сейчас"];
+
+// удалить 3 первых элемента и заменить их другими
+arr.splice(0, 3, "Давай", "танцевать");
+
+alert( arr ); // теперь ["Давай", "танцевать", "прямо", "сейчас"]
+*/
+
+
+/*
+//Перевернуть строку
+
+function reverse(str) {
+    return str.split('').reverse().join('');
+}
+console.log(reverse('Привет'));
+
+
+function reverse2(str) {
+    let newStr = '';
+    for (let i = str.length - 1; i >= 0; i--) {
+        newStr += str[i];
+    }
+    return newStr;
+}
+console.log(reverse2('IntexSoft'));
+*/
