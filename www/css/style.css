@@ -4,7 +4,7 @@
 
 .block:not(.first) {
   background: #fafafa;
-  width: 300px;
+  width: 200px;
   height: 200px;
   border: 4px solid red;
   margin-bottom: 20px; }
@@ -12,7 +12,7 @@
 .first {
   background: #fafafa;
   height: 100px;
-  width: 300px;
+  width: 200px;
   border: 4px solid red;
   margin-bottom: 20px; }
 
@@ -23,15 +23,20 @@
     display: inline-block; }
   #central_block li {
     float: left;
-    margin-right: 10px; }
+    width: 100%; }
     #central_block li a {
       font-size: 1.1em;
       font-weight: bold;
       font-family: Arial, sans-serif;
       color: blue; }
+      #central_block li a:hover {
+        color: red; }
 
 a {
-  font-size: 1.1em;
-  font-weight: light;
-  font-family: Arial, sans-serif;
-  color: #cccccc; }
+  color: red; }
+  a:hover {
+    color: red; }
+  a:active {
+    color: blue; }
+  a:visited {
+    color: green; }

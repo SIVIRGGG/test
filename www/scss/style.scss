@@ -1,19 +1,9 @@
 //Comment
-$bgColor: #fafafa;
-$color: #cccccc;
-$blockWidth: 300px;
-$border: 4px solid red;
-$mainFontSize: 1.1em;
+@import "variables";
+@import "mixins";
 * {
     padding: 0;
     margin: 0;
-}
-
-@mixin font ($color, $fontW) {
-    font-size: $mainFontSize;
-    font-weight: $fontW;
-    font-family: Arial, sans-serif;
-    color: $color;
 }
 
 .block:not(.first) {
@@ -40,16 +30,26 @@ $mainFontSize: 1.1em;
     }
     li {
         float: left;
-        margin-right: 10px;
+        width: 100%;
+        // margin-right: 10px;
         a {
             @include font(blue, bold);
             //color: blue;
+            &:hover {
+                color: red;
+            }
         }
+        //:link выбирает ещё не посещённые ссылки.
+        //:visited выбирает посещённые ссылки.
+        //:active выбирает активные ссылки (кнопка мыши зажата на ссылке).
+        //a:hover{
+        //color: red;
+        //}
     }
 }
 
 a {
-    @include font($color, light);
+    @include link(#000, red, blue, green);
     // color: #000;
 }
 
